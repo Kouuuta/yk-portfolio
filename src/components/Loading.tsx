@@ -1,9 +1,13 @@
 import { useState, useRef } from "react";
 import gsap from "gsap";
 
-export function LoadingScreen({ onComplete }) {
-  const [isExiting, setIsExiting] = useState(false);
-  const textRefs = useRef([]);
+interface LoadingScreenProps {
+  onComplete: () => void;
+}
+
+export function LoadingScreen({ onComplete }: LoadingScreenProps) {
+  const [, setIsExiting] = useState(false);
+  const textRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const buttonRef = useRef(null);
   const bgRef = useRef(null);
   const slider1Ref = useRef(null);
@@ -74,7 +78,9 @@ export function LoadingScreen({ onComplete }) {
         <div className="text-4xl md:text-7xl font-serif mb-6 leading-none text-center">
           <div className="overflow-hidden mb-4">
             <h2
-              ref={(el) => (textRefs.current[0] = el)}
+              ref={(el) => {
+                textRefs.current[0] = el;
+              }}
               className="block font-light italic text-amber-100 bg-linear-to-r from-amber-200 via-amber-100 to-amber-200 bg-clip-text"
             >
               Creating innovations
@@ -82,7 +88,9 @@ export function LoadingScreen({ onComplete }) {
           </div>
           <div className="overflow-hidden mb-4">
             <h2
-              ref={(el) => (textRefs.current[1] = el)}
+              ref={(el) => {
+                textRefs.current[1] = el;
+              }}
               className="block font-light italic text-amber-100 bg-linear-to-r from-amber-200 via-amber-100 to-amber-200 bg-clip-text"
             >
               For Everyday
@@ -90,7 +98,9 @@ export function LoadingScreen({ onComplete }) {
           </div>
           <div className="overflow-hidden">
             <h2
-              ref={(el) => (textRefs.current[2] = el)}
+              ref={(el) => {
+                textRefs.current[2] = el;
+              }}
               className="block font-light italic text-amber-100 bg-linear-to-r from-amber-200 via-amber-100 to-amber-200 bg-clip-text"
             >
               people.

@@ -47,7 +47,9 @@ const categories = [
 
 export function PortfolioGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [_selectedProject, setSelectedProject] = useState<
+    (typeof projects)[0] | null
+  >(null);
 
   const filteredProjects =
     selectedCategory === "All"
