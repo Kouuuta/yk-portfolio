@@ -27,13 +27,14 @@ const projects = [
       "A photographic journey through the heart of modern cities, capturing stories of life and humanity.",
   },
   {
-    title: "Timeless Interiors",
-    category: "Design",
-    year: "2023",
+    title: "MediMarc Trading",
+    category: "Website",
+    year: "2025",
     image:
       "https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?w=800&h=1000&fit=crop",
     description:
       "Interior design that transcends trends, creating spaces that are both functional and beautiful.",
+    link: "https://medimarc-site.vercel.app/",
   },
 ];
 

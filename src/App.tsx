@@ -5,6 +5,7 @@ import { LoadingScreen } from "./components/Loading";
 import { HeroSection } from "./components/HeroSection";
 import { PortfolioGrid } from "./components/PortfolioGrid";
 import { AboutSection } from "./components/AboutSection";
+import { TechStack } from "./components/TechStack";
 
 export function App() {
   const [showLoading, setShowLoading] = useState(true);
@@ -12,7 +13,6 @@ export function App() {
 
   const handleLoadingComplete = () => {
     setShowContent(true);
-    // Remove loading screen after content fades in
     setTimeout(() => {
       setShowLoading(false);
     }, 800);
@@ -29,7 +29,8 @@ export function App() {
       >
         <CustomCursor />
         <Navigation />
-        <HeroSection />
+        <HeroSection startAnimation={showContent} />
+        <TechStack />
         <PortfolioGrid />
         <AboutSection />
       </div>

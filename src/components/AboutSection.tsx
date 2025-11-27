@@ -54,7 +54,7 @@ export function AboutSection() {
           {/* Right column */}
           <div>
             <div className="text-xs tracking-[0.5em] text-amber-200/60 mb-6">
-              MY TECH-STACK
+              EXPERTISE
             </div>
             <div className="space-y-8">
               {[
