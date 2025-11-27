@@ -6,7 +6,7 @@ export function HeroSection({ startAnimation = false }) {
   const yutaRef = useRef(null);
   const koikeRef = useRef(null);
   const dividerRef = useRef(null);
-  const descriptionRef = useRef(null);
+  const descriptionRef = useRef<HTMLDivElement | null>(null);
   const buttonsRef = useRef(null);
   const scrollRef = useRef(null);
 
