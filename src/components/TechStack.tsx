@@ -164,7 +164,7 @@ export function TechStack() {
   }, []);
 
   return (
-    <main className="max-h-100vh w-full bg-black overflow-hidden flex flex-col md:flex-row relative">
+    <main className="max-h-100vh w-full bg-black overflow-hidden flex flex-col md:flex-row relative mt-30">
       {/* Left Content Section */}
       <div className="w-full md:w-[40%] p-8 md:p-16 flex flex-col justify-between z-20 relative">
         {/* Header */}

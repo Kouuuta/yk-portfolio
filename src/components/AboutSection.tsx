@@ -36,19 +36,20 @@ export function AboutSection() {
               ABOUT ME
             </div>
             <h2 className="text-4xl font-serif font-light italic text-amber-100 mb-8">
-              Aspiring Full-Stack Developer and Designer
+              Aspiring Full-Stack Developer
             </h2>
             <p className="text-gray-400 leading-relaxed mb-6">
-              I'm a 4th year Computer Science Student at University of Santo
-              Tomas. I'm a creative developer with a passion for building
-              beautiful, functional, and user-friendly websites and
-              applications. With expertise in both design and development, I
-              bridge the gap between aesthetics and functionality.
+              I'm a 4th-year Computer Science Student at the University of Santo
+              Tomas. I'm an aspiring creative developer with a passion for
+              building beautiful, functional, and user-friendly websites and
+              applications. With little expertise in both design and
+              development, I bridge the gap between aesthetics and
+              functionality. And I want to learn more about technology
             </p>
             <p className="text-gray-400 leading-relaxed">
-              My approach combines technical excellence with creative
-              problem-solving, resulting in digital solutions that not only work
-              flawlessly but also engage and delight users.
+              I also enjoy playing online games, watching anime, and music. I
+              also love to lift weights or go to the gym every week for my
+              mental and physical health
             </p>
           </div>
           {/* Right column */}
@@ -60,19 +61,19 @@ export function AboutSection() {
               {[
                 {
                   skill: "Front-End Development",
-                  level: "95%",
+                  level: "80%",
                 },
                 {
                   skill: "JavaScript",
-                  level: "90%",
+                  level: "70%",
                 },
                 {
                   skill: "SEO",
-                  level: "88%",
+                  level: "80%",
                 },
                 {
                   skill: "Back-End Development",
-                  level: "85%",
+                  level: "75%",
                 },
               ].map((item, index) => (
                 <div key={index}>

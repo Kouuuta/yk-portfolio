@@ -11,7 +11,7 @@ const projects = [
     link: "https://truckin-website2.vercel.app/",
   },
   {
-    title: "Midnight Collection",
+    title: "MediMarc Trading ",
     category: "Graphic Design",
     year: "2023",
     image: "SDG 14.png",
@@ -28,6 +28,15 @@ const projects = [
   },
   {
     title: "MediMarc Trading",
+    category: "Website",
+    year: "2025",
+    image: "MediMarc Trading.png",
+    description:
+      "Interior design that transcends trends, creating spaces that are both functional and beautiful.",
+    link: "https://medimarc-site.vercel.app/",
+  },
+  {
+    title: "Inventory System",
     category: "Website",
     year: "2025",
     image:
@@ -132,9 +141,6 @@ export function PortfolioGrid() {
                   {project.link?.replace(/^https?:\/\//, "➤ ") || ""}
                 </div>
               </a>
-              {/* Corners */}
-              <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-amber-200/0 group-hover:border-amber-200/30 transition-colors duration-500" />
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-amber-200/0 group-hover:border-amber-200/30 transition-colors duration-500" />
             </div>
           </div>
         ))}

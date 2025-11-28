@@ -173,11 +173,9 @@ export function Contact() {
           style={{ animation: "fadeIn 0.8s ease-out 0.5s both" }}
         >
           <div className="text-xs tracking-[0.15em] text-amber-200/60 font-light">
-            © 2025
+            © 2025 Yuta Koike
           </div>
-          <div className="text-xs tracking-[0.15em] text-amber-200/60 font-light">
-            ALL RIGHTS RESERVED
-          </div>
+          <div className="text-xs tracking-[0.15em] text-amber-200/60 font-light"></div>
         </div>
       </div>
     </div>
