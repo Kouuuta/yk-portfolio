@@ -11,36 +11,10 @@ const projects = [
     link: "https://truckin-website2.vercel.app/",
   },
   {
-    title: "MediMarc Trading ",
-    category: "Graphic Design",
-    year: "2023",
-    image: "SDG 14.png",
-    description:
-      "An exclusive fashion line that captures the essence of elegance and sophistication in every piece.",
-  },
-  {
-    title: "Urban Narratives",
-    category: "Graphic Design",
-    year: "2024",
-    image: "SDG 16.png",
-    description:
-      "A photographic journey through the heart of modern cities, capturing stories of life and humanity.",
-  },
-  {
     title: "MediMarc Trading",
     category: "Website",
     year: "2025",
     image: "MediMarc Trading.png",
-    description:
-      "Interior design that transcends trends, creating spaces that are both functional and beautiful.",
-    link: "https://medimarc-site.vercel.app/",
-  },
-  {
-    title: "Inventory System",
-    category: "Website",
-    year: "2025",
-    image:
-      "https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?w=800&h=1000&fit=crop",
     description:
       "Interior design that transcends trends, creating spaces that are both functional and beautiful.",
     link: "https://medimarc-site.vercel.app/",
