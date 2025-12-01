@@ -143,7 +143,7 @@ export function HeroSection({ startAnimation = false }) {
             className="group relative px-8 py-3 border border-amber-200/30 text-amber-100 text-sm tracking-[0.2em] overflow-hidden transition-all duration-500 hover:border-amber-200/60"
           >
             <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-              VIEW WORK
+              VIEW PROJECTS
             </span>
             <div className="absolute inset-0 bg-amber-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
           </button>
