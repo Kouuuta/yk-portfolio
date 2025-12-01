@@ -149,8 +149,8 @@ export function HeroSection({ startAnimation = false }) {
           </button>
 
           <button className="group relative px-8 py-3 bg-amber-200/10 text-amber-100 text-sm tracking-[0.2em] overflow-hidden transition-all duration-500 hover:bg-transparent border border-transparent hover:border-amber-200/30">
-            <a href="/Contact" className="relative z-10">
-              CONTACT
+            <a href="/cv/Koike_CV.pdf" download className="relative z-10">
+              DOWNLOAD CV
             </a>
             <div className="absolute inset-0 bg-linear-to-r from-amber-200/0 via-amber-200/20 to-amber-200/0 transform translate-x-full group-hover:translate-x-[-200%] transition-transform duration-1000" />
           </button>
