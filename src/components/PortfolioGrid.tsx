@@ -19,9 +19,18 @@ const projects = [
       "Interior design that transcends trends, creating spaces that are both functional and beautiful.",
     link: "https://medimarc-site.vercel.app/",
   },
+  {
+    title: "Thesis - Waste Detection",
+    category: "Machine Learning",
+    year: "2025",
+    image: "waste-demo.jpg",
+    description:
+      "Our thesis about computer vision using the TACO and TrashNet dataset toYOLOv5 and ResNet50 for training models to detect waste in images ",
+    link: "https://huggingface.co/spaces/yutakoike/waste-detection",
+  },
 ];
 
-const categories = ["All", "Website", "Graphic Design"];
+const categories = ["All", "Website", "Graphic Design", "Machine Learning"];
 
 export function PortfolioGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -51,7 +60,6 @@ export function PortfolioGrid() {
           </p>
         </div>
       </div>
-      {/* Category Filter */}
       <div className="max-w-7xl mx-auto mb-16 flex flex-wrap gap-4">
         {categories.map((category) => (
           <button
@@ -80,7 +88,6 @@ export function PortfolioGrid() {
             onClick={() => setSelectedProject(project)}
           >
             <div className="aspect-6/5 overflow-hidden bg-gray-900 relative">
-              {/* Hover glow */}
               <div className="absolute inset-0 bg-amber-400/0 group-hover:bg-amber-400/10 transition-colors duration-700 blur-xl" />
 
               <img
@@ -89,15 +96,12 @@ export function PortfolioGrid() {
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
 
-              {/* Shimmer animation */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-amber-200/10 to-transparent animate-[shimmer_2s_ease-in-out_infinite]" />
               </div>
 
-              {/* Wrap the entire card content in a link */}
               <a
                 href={project.link}
                 target="_blank"
@@ -120,7 +124,6 @@ export function PortfolioGrid() {
         ))}
       </div>
 
-      {/* Shimmer keyframes */}
       <style>{`
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
