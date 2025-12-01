@@ -83,7 +83,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
               }}
               className="block font-light italic text-amber-100 bg-linear-to-r from-amber-200 via-amber-100 to-amber-200 bg-clip-text"
             >
-              Creating innovations
+              Turning Ideas
             </h2>
           </div>
           <div className="overflow-hidden mb-4">
@@ -93,7 +93,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
               }}
               className="block font-light italic text-amber-100 bg-linear-to-r from-amber-200 via-amber-100 to-amber-200 bg-clip-text"
             >
-              For Everyday
+              Into Simple And
             </h2>
           </div>
           <div className="overflow-hidden">
@@ -103,7 +103,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
               }}
               className="block font-light italic text-amber-100 bg-linear-to-r from-amber-200 via-amber-100 to-amber-200 bg-clip-text"
             >
-              people.
+              Practical Solutions
             </h2>
           </div>
         </div>
@@ -114,7 +114,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
           className="mb-7 group relative px-8 py-3 border border-amber-200/30 text-amber-100 text-sm tracking-[0.2em] overflow-hidden transition-all duration-500 hover:border-amber-200/60"
         >
           <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-            Let's Go
+            Check my portfolio
           </span>
           <div className="absolute inset-0 bg-amber-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
         </button>

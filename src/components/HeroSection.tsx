@@ -125,7 +125,7 @@ export function HeroSection({ startAnimation = false }) {
           ref={descriptionRef}
           className="text-lg md:text-xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto leading-relaxed"
         >
-          {"Crafting timeless experiences through the intersection of art, technology, and human connection"
+          {"I enjoy building things that look good and actually work."
             .split(" ")
             .map((word, i) => (
               <span key={i} className="word inline-block opacity-0">

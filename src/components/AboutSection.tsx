@@ -36,20 +36,22 @@ export function AboutSection() {
               ABOUT ME
             </div>
             <h2 className="text-4xl font-serif font-light italic text-amber-100 mb-8">
-              Aspiring Full-Stack Developer
+              Creative Developer & Problem Solver
             </h2>
             <p className="text-gray-400 leading-relaxed mb-6">
-              I'm a 4th-year Computer Science Student at the University of Santo
-              Tomas. I'm an aspiring creative developer with a passion for
-              building beautiful, functional, and user-friendly websites and
-              applications. With little expertise in both design and
-              development, I bridge the gap between aesthetics and
-              functionality. And I want to learn more about technology
+              I'm a 4th-year Computer Science student at the University of Santo
+              Tomas, and a Japanese-Filipino aspiring creative developer who
+              loves turning ideas into beautiful, functional, and user-friendly
+              digital experiences. I enjoy working on both design and
+              development, and I love bridging the gap between aesthetics and
+              functionality. I'm always curious and always wanted to learn
+              especially when it comes to new technologies and modern
+              frameworks.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              I also enjoy playing online games, watching anime, and music. I
-              also love to lift weights or go to the gym every week for my
-              mental and physical health
+              Outside of coding, I enjoy playing online games, watching anime,
+              listening to music, and hitting the gym every week to take care of
+              both my physical and mental health.
             </p>
           </div>
           {/* Right column */}
@@ -74,6 +76,10 @@ export function AboutSection() {
                 {
                   skill: "Back-End Development",
                   level: "75%",
+                },
+                {
+                  skill: "Machine Learning",
+                  level: "70%",
                 },
               ].map((item, index) => (
                 <div key={index}>

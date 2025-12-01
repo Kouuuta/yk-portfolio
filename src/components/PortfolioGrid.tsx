@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Big C Trucking Services",
+    title: "Big C Trucking Services (Unfinished)",
     category: "Website",
     year: "2025",
     image: "bigc_logo.png",
@@ -21,13 +21,7 @@ const projects = [
   },
 ];
 
-const categories = [
-  "All",
-  "Website",
-  "Graphic Design",
-  "Photography",
-  "Design",
-];
+const categories = ["All", "Website", "Graphic Design"];
 
 export function PortfolioGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -48,8 +42,14 @@ export function PortfolioGrid() {
           SELECTED WORKS
         </div>
         <h2 className="text-5xl md:text-6xl font-serif font-light italic text-amber-100">
-          Featured Projects
+          Current Projects
         </h2>
+        <div>
+          <p className="text-gray-400 leading-relaxed mb-6 mt-7 w-100 ">
+            These are some of my deployed projects, along with others I'm still
+            building and enhancing as part of my learning journey.
+          </p>
+        </div>
       </div>
       {/* Category Filter */}
       <div className="max-w-7xl mx-auto mb-16 flex flex-wrap gap-4">

@@ -170,13 +170,13 @@ export function TechStack() {
         {/* Header */}
         <div className="max-w-7xl mx-auto mb-12">
           <div className="text-xs tracking-[0.5em] text-amber-200/60 mb-4">
-            MY TECH-STACK
+            MY TECH STACK
           </div>
           <h2 className="text-3xl md:text-6xl font-serif font-light italic text-amber-100 mb-10">
             The Techs Behind Every Project I Build.
           </h2>
           <div>
-            <p className="text-gray-400 leading-relaxed mb-6">
+            <p className="text-gray-400 leading-relaxed mb-6 w-100">
               A collection of modern web technologies that power the interfaces
               and systems I build focused on performance, precision, and
               aesthetic detail.
@@ -201,7 +201,6 @@ export function TechStack() {
         </div>
       </div>
 
-      {/* Subtle ambient glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
