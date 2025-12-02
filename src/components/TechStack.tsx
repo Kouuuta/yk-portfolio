@@ -164,30 +164,29 @@ export function TechStack() {
   }, []);
 
   return (
-    <main className="max-h-100vh w-full bg-black overflow-hidden flex flex-col md:flex-row relative mt-30">
+    <section className="w-full bg-black overflow-hidden flex flex-col md:flex-row relative py-16 md:py-0">
       {/* Left Content Section */}
-      <div className="w-full md:w-[40%] p-8 md:p-16 flex flex-col justify-between z-20 relative">
+      <div className="w-full md:w-[40%] p-8 md:p-16 flex flex-col justify-center z-20 relative">
         {/* Header */}
-        <div className="max-w-7xl mx-auto mb-12">
+        <div className="max-w-2xl">
           <div className="text-xs tracking-[0.5em] text-amber-200/60 mb-4">
             MY TECH STACK
           </div>
-          <h2 className="text-3xl md:text-6xl font-serif font-light italic text-amber-100 mb-10">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-light italic text-amber-100 mb-6 md:mb-10 leading-tight">
             The Techs Behind Every Project I Build.
           </h2>
-          <div>
-            <p className="text-gray-400 leading-relaxed mb-6 w-100">
-              A collection of modern web technologies that power the interfaces
-              and systems I build focused on performance, precision, and
-              aesthetic detail.
-            </p>
-          </div>
+          <p className="text-gray-400 leading-relaxed text-sm md:text-base max-w-xl">
+            A collection of modern web technologies that power the interfaces
+            and systems I build focused on performance, precision, and aesthetic
+            detail.
+          </p>
         </div>
       </div>
 
-      <div className="w-full md:w-[60%] h-[40vh] md:h-[65vh] flex items-center relative perspective-container">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-black to-transparent z-10 pointer-events-none md:block hidden" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-black to-transparent z-10 pointer-events-none md:block hidden" />
+      {/* Right Scrolling Section */}
+      <div className="w-full md:w-[60%] h-[40vh] md:h-screen md:min-h-[600px] flex items-center relative overflow-hidden">
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-black to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-black to-transparent z-10 pointer-events-none" />
 
         <div ref={scrollRef} className="w-full overflow-hidden py-8">
           <div ref={trackRef} className="flex gap-12 w-max px-12">
@@ -205,6 +204,6 @@ export function TechStack() {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
       </div>
-    </main>
+    </section>
   );
 }

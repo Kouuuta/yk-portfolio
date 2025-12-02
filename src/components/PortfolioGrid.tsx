@@ -44,23 +44,27 @@ export function PortfolioGrid() {
       : projects.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="work" className="relative py-32 px-6 md:px-12">
+    <section
+      id="work"
+      className="relative py-32 px-6 md:px-12 bg-black w-full overflow-hidden"
+    >
       {/* Section header */}
-      <div className="max-w-7xl mx-auto mb-12">
+      <div className="max-w-7xl mx-auto mb-12 w-full">
         <div className="text-xs tracking-[0.5em] text-amber-200/60 mb-4">
           SELECTED WORKS
         </div>
         <h2 className="text-5xl md:text-6xl font-serif font-light italic text-amber-100">
           Current Projects
         </h2>
-        <div>
-          <p className="text-gray-400 leading-relaxed mb-6 mt-7 w-100 ">
+        <div className="mt-7">
+          <p className="text-gray-400 leading-relaxed mb-6 max-w-3xl">
             These are some of my deployed projects, along with others I'm still
             building and enhancing as part of my learning journey.
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mb-16 flex flex-wrap gap-4">
+
+      <div className="max-w-7xl mx-auto mb-16 flex flex-wrap gap-4 w-full">
         {categories.map((category) => (
           <button
             key={category}
@@ -80,7 +84,7 @@ export function PortfolioGrid() {
       </div>
 
       {/* Project Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         {filteredProjects.map((project, index) => (
           <div
             key={index}
