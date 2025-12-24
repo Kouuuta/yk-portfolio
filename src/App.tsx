@@ -31,10 +31,9 @@ export function App() {
         <Navigation />
         <HeroSection startAnimation={showContent} />
         <TechStack />
-        {/* Divider between sections */}
         <div className="w-full bg-black py-12">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <div className="h-px bg-gradient-to-r from-transparent via-amber-200/30 to-transparent" />
+            <div className="h-px bg-linear-to-r from-transparent via-amber-200/30 to-transparent" />
           </div>
         </div>
         <PortfolioGrid />
