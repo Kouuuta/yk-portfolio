@@ -17,28 +17,28 @@ export function HeroSection({ startAnimation = false }) {
       tl.fromTo(
         introRef.current,
         { opacity: 0, y: -20 },
-        { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }
+        { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
       );
 
       tl.fromTo(
         yutaRef.current,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
-        "-=0.4"
+        "-=0.4",
       );
 
       tl.fromTo(
         koikeRef.current,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
-        "-=0.5"
+        "-=0.5",
       );
 
       tl.fromTo(
         dividerRef.current,
         { opacity: 0, scaleX: 0 },
         { opacity: 1, scaleX: 1, duration: 1, ease: "power3.inOut" },
-        "-=0.3"
+        "-=0.3",
       );
 
       if (descriptionRef.current) {
@@ -53,7 +53,7 @@ export function HeroSection({ startAnimation = false }) {
             stagger: 0.05,
             ease: "power2.out",
           },
-          "-=0.5"
+          "-=0.5",
         );
       }
 
@@ -61,14 +61,14 @@ export function HeroSection({ startAnimation = false }) {
         buttonsRef.current,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
-        "-=0.3"
+        "-=0.3",
       );
 
       tl.fromTo(
         scrollRef.current,
         { opacity: 0 },
         { opacity: 1, duration: 0.7, ease: "power2.out" },
-        "-=0.3"
+        "-=0.3",
       );
     }
   }, [startAnimation]);
@@ -149,7 +149,7 @@ export function HeroSection({ startAnimation = false }) {
           </button>
 
           <button className="group relative px-8 py-3 bg-amber-200/10 text-amber-100 text-sm tracking-[0.2em] overflow-hidden transition-all duration-500 hover:bg-transparent border border-transparent hover:border-amber-200/30">
-            <a href="/cv/Koike_CV.pdf" download className="relative z-10">
+            <a href="/cv/Koike_Resume.pdf" download className="relative z-10">
               DOWNLOAD CV
             </a>
             <div className="absolute inset-0 bg-linear-to-r from-amber-200/0 via-amber-200/20 to-amber-200/0 transform translate-x-full group-hover:translate-x-[-200%] transition-transform duration-1000" />
