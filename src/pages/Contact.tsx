@@ -25,8 +25,8 @@ export function Contact() {
     {
       name: "Instagram",
       icon: Instagram,
-      handle: "Kouuuuuta",
-      link: "https://www.instagram.com/kouuuuuta/",
+      handle: "ykoike_",
+      link: "https://www.instagram.com/ykoike_/",
     },
     {
       name: "Facebook",
